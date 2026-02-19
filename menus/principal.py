@@ -4,6 +4,8 @@ from temas.listas.ejercicio3 import ejercicio_3
 from temas.condicionales.ejercicio4 import ejercicio_4
 from temas.ciclos.ejercicio5 import ejercicio_5
 #   carpeta.carpeta.archivo          función
+from temas.poo.clases.ejer1poo import Ejercicio1
+#            carpetas archivo          clase
 
 def menuPrincipal():
     while True:
@@ -19,7 +21,13 @@ def menuPrincipal():
         print()
         match(op):
             case 1:
-                ejercicio_1()
+                #ejercicio_1()
+                #crear el objeto de la clase
+                e1 = Ejercicio1()
+                #llamar al método a través del objeto
+                e1.leerDatos()
+                e1.calcularX()
+                e1.mostrarResultado()
                 print()
             case 2:
                 ejercicio_2()
